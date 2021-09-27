@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.dellpc.smartvillage.Village_reg"
+    android:background="@drawable/details">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="300dp"
+                android:layout_height="180dp"
+                android:id="@+id/imageView5"
+                android:src="@drawable/sv"
+                android:layout_gravity="center_horizontal" />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#515151"></LinearLayout>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="false"
+                android:id="@+id/tableLayout"
+                android:baselineAligned="false"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/details9"
+                android:paddingTop="30dp"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:paddingBottom="10dp">
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName"
+                        android:ems="10"
+                        android:id="@+id/txtVillname"
+                        android:layout_weight="1"
+                        android:hint="Village Name"
+                        android:paddingLeft="5dp"
+                        android:paddingTop="10dp"
+                        android:textSize="20dp"
+                        android:textStyle="normal"
+                        android:maxLength="20"
+                        android:background="#ffffff"/>
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:id="@+id/txtHead"
+                        android:layout_weight="1"
+                        android:hint="Village Head name"
+                        android:paddingLeft="5dp"
+                        android:paddingTop="10dp"
+                        android:textSize="20dp"
+                        android:textStyle="normal"
+                        android:maxLength="20"
+                        android:background="#ffffff"
+                        android:inputType="textPersonName" />
+                </TableRow>
+                <RadioGroup
+                    android:layout_width="343dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="left|center_horizontal"
+                    android:layout_marginTop="15dp">
+
+                    <TextView
+                        android:layout_width="110dp"
+                        android:layout_height="wrap_content"
+                        android:text="Gender:"
+                        android:id="@+id/textGender"
+                        android:textColor="#353535"
+                        android:textSize="18dp"
+                        android:layout_gravity="left|center_vertical"
+                        android:textStyle="bold" />
+
+                    <RadioButton
+                        android:layout_width="90dp"
+                        android:layout_height="wrap_content"
+                        android:text="Male"
+                        android:id="@+id/rdMale"
+                        android:textColor="#353535"
+                        android:background="#ffffff"/>
+
+                    <RadioButton
+                        android:layout_width="90dp"
+                        android:layout_height="wrap_content"
+                        android:text="Female"
+                        android:id="@+id/rdFemale"
+                        android:textColor="#353535"
+                        android:background="#ffffff"
+                        android:layout_marginLeft="30dp" />
+                </RadioGroup>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textEmailAddress"
+                        android:ems="10"
+                        android:id="@+id/txtMail"
+                        android:paddingLeft="5dp"
+                        android:paddingTop="10dp"
+                        android:layout_weight="1"
+                        android:textStyle="normal"
+                        android:maxLength="40"
+                        android:background="#ffffff"
+                        android:hint="Email"/>
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="phone"
+                        android:ems="10"
+                        android:textSize="20dp"
+                        android:id="@+id/txtphone"
+                        android:hint="Phone"
+                        android:layout_weight="1"
+                        android:lines="1"
+                        android:maxLength="10"
+                        android:background="#ffffff"
+                        android:paddingLeft="5dp"
+                        android:paddingTop="10dp"/>
+                </TableRow>
+
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:id="@+id/txtArea"
+                        android:layout_weight="1"
+                        android:hint="Area (in hectares)"
+                        android:paddingLeft="5dp"
+                        android:paddingTop="10dp"
+                        android:textSize="20dp"
+                        android:textStyle="normal"
+                        android:maxLength="30"
+                        android:background="#ffffff"
+                        android:inputType="numberSigned" />
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:id="@+id/txtPopulation"
+                        android:layout_weight="1"
+                        android:hint="Population"
+                        android:paddingLeft="5dp"
+                        android:paddingTop="10dp"
+                        android:textSize="20dp"
+                        android:textStyle="normal"
+                        android:maxLength="20"
+                        android:background="#ffffff"
+                        android:inputType="number" />
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:id="@+id/txtHouses"
+                        android:layout_weight="1"
+                        android:hint="No. of Houses"
+                        android:paddingLeft="5dp"
+                        android:paddingTop="10dp"
+                        android:textSize="20dp"
+                        android:textStyle="normal"
+                        android:maxLength="20"
+                        android:background="#ffffff"
+                        android:inputType="number" />
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:id="@+id/txtSchools"
+                        android:layout_weight="1"
+                        android:hint="No. of Schools"
+                        android:paddingLeft="5dp"
+                        android:paddingTop="10dp"
+                        android:textSize="20dp"
+                        android:textStyle="normal"
+                        android:maxLength="20"
+                        android:background="#ffffff"
+                        android:inputType="number" />
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:id="@+id/txtHospitals"
+                        android:layout_weight="1"
+                        android:hint="No. of Hospitals"
+                        android:paddingLeft="5dp"
+                        android:paddingTop="10dp"
+                        android:textSize="20dp"
+                        android:textStyle="normal"
+                        android:maxLength="20"
+                        android:background="#ffffff"
+                        android:inputType="number" />
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:id="@+id/txtFarmingAreas"
+                        android:layout_weight="1"
+                        android:hint="Total Farming Area(in hectares)"
+                        android:paddingLeft="5dp"
+                        android:paddingTop="10dp"
+                        android:textSize="20dp"
+                        android:textStyle="normal"
+                        android:maxLength="20"
+                        android:background="#ffffff"
+                        android:inputType="number" />
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:id="@+id/txtPO"
+                        android:layout_weight="1"
+                        android:hint="Post Office"
+                        android:paddingLeft="5dp"
+                        android:paddingTop="10dp"
+                        android:textSize="20dp"
+                        android:textStyle="normal"
+                        android:maxLength="20"
+                        android:background="#ffffff"
+                        android:inputType="text" />
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:id="@+id/txtPS"
+                        android:layout_weight="1"
+                        android:hint="Police Station"
+                        android:paddingLeft="5dp"
+                        android:paddingTop="10dp"
+                        android:textSize="20dp"
+                        android:textStyle="normal"
+                        android:maxLength="20"
+                        android:background="#ffffff"
+                        android:inputType="text" />
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:id="@+id/txtDistt"
+                        android:layout_weight="1"
+                        android:hint="District"
+                        android:paddingLeft="5dp"
+                        android:paddingTop="10dp"
+                        android:textSize="20dp"
+                        android:textStyle="normal"
+                        android:maxLength="20"
+                        android:background="#ffffff"
+                        android:inputType="text" />
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:id="@+id/txtState"
+                        android:layout_weight="1"
+                        android:hint="State"
+                        android:paddingLeft="5dp"
+                        android:paddingTop="10dp"
+                        android:textSize="20dp"
+                        android:textStyle="normal"
+                        android:maxLength="20"
+                        android:background="#ffffff"
+                        android:inputType="text" />
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="15dp">
+
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/spinner"
+                        android:spinnerMode="dropdown"
+                        android:dropDownWidth="match_parent"
+                        android:clickable="true"
+                        android:background="@drawable/abc_spinner_textfield_background_material"
+                        android:layout_weight="1" />
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:id="@+id/txtHeads"
+                        android:layout_weight="1"
+                        android:hint="Enter other village head names"
+                        android:paddingLeft="5dp"
+                        android:paddingTop="10dp"
+                        android:textSize="20dp"
+                        android:textStyle="normal"
+                        android:textIsSelectable="false"
+                        android:background="#ffffff"
+                        android:inputType="text"
+                        android:lines="1"
+                        android:maxLength="30"
+                        android:singleLine="true"/>
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Add"
+                        android:id="@+id/btn_add"
+                        android:background="@drawable/reg_btn"
+                        android:layout_marginBottom="10dp"/>
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp">
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Submit"
+                        android:id="@+id/btnSubmit"
+                        android:background="@drawable/regstr_btn"
+                        android:textColor="#ffffff"
+                        android:textSize="15dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1" />
+                </TableRow>
+
+            </TableLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

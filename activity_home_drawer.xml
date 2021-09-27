@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_map"
+            android:icon="@drawable/gmapgr"
+            android:title="Village Map" />
+        <item
+            android:id="@+id/nav_irr"
+            android:icon="@drawable/irrgr"
+            android:title="Irrigation" />
+        <item
+            android:id="@+id/nav_crpsec"
+            android:icon="@drawable/crpsecgr"
+            android:title="Crop Security" />
+        <item
+            android:id="@+id/nav_edu"
+            android:icon="@drawable/educgr"
+            android:title="Education" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Send" />
+            <item
+                android:id="@+id/rate"
+                android:icon="@drawable/rate2"
+                android:title="Rate Us" />
+
+        </menu>
+    </item>
+
+</menu>
